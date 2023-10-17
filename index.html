@@ -11,6 +11,10 @@
 <link rel="stylesheet" media="all" href="css/style.css" />
 <!-- ローディング画面 CSS -->
 <link rel="stylesheet" media="all" href="css/road.css" />
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<!-- <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-2/css/reset.css">
+<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-2/css/5-2.css">
+<link rel="stylesheet" media="all" href="css/background.css" /> -->
 </head>
 
 <body>
@@ -37,8 +41,8 @@
         <div class="row">
             <div class="col span-12 header">
                 <h1>Portfolio</a></h1>
-                <div class="header-box"><a href="#" onclick="return false;"><span class="contact-button">お問い合わせ</span></a></div>
-                </div>
+                <!-- <div class="header-box"><a href="#" onclick="return false;"><span class="contact-button">お問い合わせ</span></a></div>
+                </div> -->
             </div>
         <div class="row">
             <div class="col span-12">
@@ -47,12 +51,12 @@
                   <div id="close"></div>   
                     <div id="navi">
                 <ul>
-                    <li><a href="index.html">ホーム</a></li>
+                    <!-- <li><a href="index.html">ホーム</a></li> -->
                     <li><a href="#1">Profile</a></li>
                     <li><a href="#2">Production</a></li>
-                    <li><a href="#3">申し込みの流れ</a></li>
-                    <li><a href="#4">Link</a></li>
-                    <li><a href="#5">Link</a></li>
+                    <li><a href="#3">Contact</a></li>
+                    <!-- <li><a href="#4">Link</a></li>
+                    <li><a href="#5">Link</a></li> -->
                  </ul>
                      </div>
                 </nav>
@@ -67,19 +71,18 @@
                 
             <main>
               
-                <div class="catch">
+                <!-- <div class="catch">
                 <h2><span class="under">キャッチフレーズ</span></h2>
                 <p>ここにキャッチコピーが入ります。<br>お店の宣伝やコンセプトなど。魅せる文言を入力。</p>
-                </div>
+                </div> -->
                 
-        <section id="1" class="gray-back">
-                <h2 class="center"><span class="under">Profile</span></h2>
-        <div class="container center">
-            <div class="col span-4">
-                <p>某国立大学工学部在籍中。<br>研究室の先輩からLPサイト開発を誘われたことをきっかけに、趣味でプログラミングの勉強を始めるようになる。<br>嫌いな食べ物:group of filamentous fungi</p>
-            </div>
+        <section id="1" class="catch">
+                <h2><span class="under">Profile</span></h2>
             
-        </div>
+              <span class="center">
+                <p>某国立大学工学部在籍中。<br>ガクチカと長期インターン採用への足掛かりとして、<br>プログラミングの勉強を始めるようになる。<br>嫌いな食べ物:group of filamentous fungi</p>
+              </span>
+            
         </section>
                 
         <section id="2">
@@ -87,7 +90,9 @@
         <div class="container center">
         <div class="row">
             <div class="col span-4">
+              <a href="https://yuma3012.github.io/Homepagemaker/">
                 <img src="img/staff.jpg" alt="スタッフ">
+              </a>
                 <h3>ホームページメーカー</h3>
                 <p>名前・写真等を入力することで、<br>オリジナルのHPを生成できるサイト</p>
             <p>使用言語...html・css・javascript・php</p>
@@ -105,8 +110,26 @@
             </div>
             </div>
         </section>
-                
-        <section id="3" class="gray-back">
+        
+        <section id="3">
+          <h2 class="center"><span class="under">Contact</span></h2>
+          <section class="container">
+          <div class="row">
+              <div class="col span-6">
+                  <div class="contact-box">
+                  <p><img src="img/tel.png" alt="電話"></p>
+                  <p>012-345-6789</p>
+                  </div>
+              </div>
+              <div class="col span-6">
+                  <div class="contact-box">
+                  <p><img src="img/mail.png" alt="Eメール"></p>
+                  <p>try.ykobayshi@gmail.com</p>
+                  </div>
+              </div>
+              </div>
+          </section>	
+        <!-- <section id="3" class="gray-back">
                 <h2 class="center"><span class="under">申し込みの流れ</span></h2>
         <div class="container">
         <div class="row flow">
@@ -131,39 +154,23 @@
             </div>
             </div>
             </div>
-        </section>
+        </section> -->
                 
-        <section id="4">
+        <!-- <section id="4">
                 <h2 class="center"><span class="under">アクセス</span></h2>
         <div class="container">
         <div class="row">
             <div class="col span-12">
             <!-- GoogleMap -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27814443.96425483!2d120.28897720705172!3d31.679877148840735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1sja!2sjp!4v1555153587836!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27814443.96425483!2d120.28897720705172!3d31.679877148840735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1sja!2sjp!4v1555153587836!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             <!-- /GoogleMap -->
-            </div>
+            <!-- </div>
             </div>	
             </div>
-        </section>
+        </section> --> --> -->
                 
-        <section id="5">
-                <h2 class="center"><span class="under">お問い合わせ</span></h2>
-        <div class="container">
-        <div class="row">
-            <div class="col span-6">
-                <div class="contact-box">
-                <p><img src="img/tel.png" alt="電話"></p>
-                <p>012-345-6789</p>
-                </div>
-            </div>
-            <div class="col span-6">
-                <div class="contact-box">
-                <p><img src="img/mail.png" alt="Eメール"></p>
-                <p>simple@mail.com</p>
-                </div>
-            </div>
-            </div>	
-        <div class="row">
+        
+        <!-- <div class="row">
             <div class="col span-12">
          <form method="post" action="">
         <table class="table full-width">
@@ -212,7 +219,7 @@
             </div>
                 </div>
         </div>
-            </footer>
+            </footer> -->
             <div class="copyright">
             <a href="https://popo-design.net" target="_blank"> © 2023 Portfolio</a> 
                 </div>
@@ -272,5 +279,6 @@ setTimeout(function() {
     $('#loading-screen').fadeOut("slow");
 }, 2000);
 </script>
+<script src="js/style.js"></script>
 </body>
 </html>
