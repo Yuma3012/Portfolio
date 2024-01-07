@@ -72,7 +72,23 @@
             </div>
         </header>
             <div class="mainimg">
-                      <img src="img/mainimg.jpg" alt="メイン画像">  
+                      <div class="slide-container">
+                        <div class="slide-wrapper">
+                          <img class="slide" src="img/umarche.gif" alt="京都">
+                          <img class="slide" src="img/books.gif" alt="横浜">
+                          <img class="slide" src="img/flow.jpg" alt="良い街">
+                        </div>
+                        <div class="slide-wrapper">
+                          <img class="slide" src="img/umarche.gif" alt="京都">
+                          <img class="slide" src="img/books.gif" alt="横浜">
+                          <img class="slide" src="img/flow.jpg" alt="良い街">
+                        </div>
+                        <div class="slide-wrapper">
+                          <img class="slide" src="img/umarche.gif" alt="京都">
+                          <img class="slide" src="img/books.gif" alt="横浜">
+                          <img class="slide" src="img/flow.jpg" alt="良い街">
+                        </div>
+                      </div>
                 </div>
                 
             <main>
@@ -314,8 +330,8 @@ var bar = new ProgressBar.SemiCircle(road, {
     value: '',
     alignToBottom: false
   },
-  from: {color: '#FFEA82'},
-  to: {color: '#ED6A5A'},
+  from: {color: '#E1E1E1'},
+  to: {color: '#2e4a88'},
   step: (state, bar) => {
     bar.path.setAttribute('stroke', state.color);
     var value = Math.round(bar.value() * 100);
